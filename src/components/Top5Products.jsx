@@ -3,7 +3,7 @@ import { top5Product } from '../constants'
 
 const Top5Products = () => {
   return (
-    <section className='w-full h-screen my-20 flex flex-col items-center justify-center space-y-10'>
+    <section className='w-full h-screen my-96 lg:my-20 flex flex-col items-center justify-center space-y-10'>
         <h1 className='text-3xl font-[600]'>Founders Top 5 Favorites</h1>
         <div className='flex justify-around items-center flex-wrap gap-5'>
             {top5Product.map((item,index) => (

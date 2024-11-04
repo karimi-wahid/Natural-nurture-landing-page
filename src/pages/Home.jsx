@@ -11,7 +11,7 @@ import Features from '../components/Features'
 
 const Home = () => {
   return (
-    <div className='gird place-items-center bg-neutral-200'>
+    <div className='gird place-items-center bg-neutral-100'>
        <Hero />
       <Ingrident />
       <BestSeller />

@@ -21,7 +21,7 @@ const Navbar = () => {
                 </div>
                 <ul className='hidden lg:flex ml-14 space-x-12'>
                     {navItems.map((item, index) =>{
-                        return <li key={index} className='hover:border-b border-green-700'>
+                        return <li key={index} className='hover:text-[#7e8427]'>
                             <Link to={item.href}>{item.label}</Link>
                         </li>
                     })
@@ -29,11 +29,11 @@ const Navbar = () => {
                 </ul>
                 <div className='hidden lg:flex justify-center space-x-12 items-center'>
                     <Link to='/login'>
-                    <FaUser size={30} />
+                    <FaUser size={30} className='text-[#7e8427]' />
                     </Link>
                     
                     <Link to='/'>
-                    <IoIosCart  size={30}/>
+                    <IoIosCart  size={30} className='text-[#7e8427]'/>
                     </Link>
                 </div>
                 <div className="lg:hidden md:flex flex-col justify-end">

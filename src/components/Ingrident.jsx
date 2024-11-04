@@ -11,7 +11,7 @@ const Ingrident = () => {
         </h1>
       </div>
       <div>
-        <ul className="flex  justify-between items-center gap-10">
+        <ul className="flex  justify-between items-center flex-wrap gap-10">
           {ingIcon.map((item, index) => (
             <li className="w-[100px] text-center">
               <img
