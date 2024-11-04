@@ -3,6 +3,7 @@ import Hero from '../components/Hero'
 import Ingrident from '../components/Ingrident'
 import BestSeller from '../components/BestSeller'
 import PhotoGallery from '../components/PhotoGallery'
+import ChooseProduct from '../components/ChooseProduct'
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Ingrident />
       <BestSeller />
       <PhotoGallery />
+      <ChooseProduct />
     </div>
   )
 }
