@@ -4,6 +4,7 @@ import Ingrident from '../components/Ingrident'
 import BestSeller from '../components/BestSeller'
 import PhotoGallery from '../components/PhotoGallery'
 import ChooseProduct from '../components/ChooseProduct'
+import MeetFounder from '../components/MeetFounder'
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <BestSeller />
       <PhotoGallery />
       <ChooseProduct />
+      <MeetFounder />
     </div>
   )
 }

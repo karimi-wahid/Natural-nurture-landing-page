@@ -2,7 +2,7 @@ import React from "react";
 
 const ChooseProduct = () => {
   return (
-    <div
+    <section
       className="w-full h-screen bg-center bg-cover flex justify-center items-center flex-col bg-slate-200 my-10"
       style={{
         backgroundImage: `url('https://websitedemos.net/beauty-products-store-04/wp-content/uploads/sites/830/2021/04/bg-03-free-img.png')`,
@@ -19,7 +19,7 @@ const ChooseProduct = () => {
           Choose Your Products
         </button>
       </div>
-    </div>
+    </section>
   );
 };
 
