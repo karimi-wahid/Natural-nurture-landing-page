@@ -7,6 +7,7 @@ import ChooseProduct from '../components/ChooseProduct'
 import MeetFounder from '../components/MeetFounder'
 import Top5Products from '../components/Top5Products'
 import Testimonials from '../components/Testimonials'
+import Features from '../components/Features'
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       <MeetFounder />
       <Top5Products />
       <Testimonials />
+      <Features />
     </div>
   )
 }
