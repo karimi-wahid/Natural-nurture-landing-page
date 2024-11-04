@@ -151,3 +151,57 @@ export const testimonial = [
         name: 'Nicole Anne Dime'
     }
 ]
+
+
+export const usefulLinks = [
+    {
+        label: "About Us",
+        link: '/about'
+    },
+    {
+        label: "Contact Us",
+        link: '/contact'
+    },
+    {
+        label: "Best Deals",
+        link: '/'
+    },
+    {
+        label: "FAQs",
+        link: '/'
+    },
+]
+export const categories = [
+    {
+        label: "Bath & Body",
+        link: '#'
+    },
+    {
+        label: "Skin Care",
+        link: '#'
+    },
+    {
+        label: "Hair Care",
+        link: '#'
+    },
+    {
+        label: "Face Wash & Packs",
+        link: '#'
+    },
+    {
+        label: "Body Care & Soaps",
+        link: "#"
+    }
+]
+
+export const contactUs = [
+    {
+        label: "Kart-E-Naw, District 8, Kabul, AFG"
+    },
+    {
+        label: "+93766-303-465",
+    },
+    {
+        label: "wahidullah.karimi22@gmail.com",
+    },
+]
