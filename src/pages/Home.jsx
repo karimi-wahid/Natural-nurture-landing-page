@@ -6,10 +6,11 @@ import PhotoGallery from '../components/PhotoGallery'
 import ChooseProduct from '../components/ChooseProduct'
 import MeetFounder from '../components/MeetFounder'
 import Top5Products from '../components/Top5Products'
+import Testimonials from '../components/Testimonials'
 
 const Home = () => {
   return (
-    <div className='gird place-items-center'>
+    <div className='gird place-items-center bg-neutral-200'>
        <Hero />
       <Ingrident />
       <BestSeller />
@@ -17,6 +18,7 @@ const Home = () => {
       <ChooseProduct />
       <MeetFounder />
       <Top5Products />
+      <Testimonials />
     </div>
   )
 }

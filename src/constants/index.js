@@ -128,3 +128,26 @@ export const top5Product = [
         link: 'https://websitedemos.net/beauty-products-store-04/wp-content/uploads/sites/830/2021/04/product-0010-free-img.png'
     },
 ]
+
+export const testimonial = [
+    {
+        link: 'https://websitedemos.net/beauty-products-store-04/wp-content/uploads/sites/830/2021/04/testimonial-01-free-img.jpg',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+        name: 'Natalie Attired'
+    },
+    {
+        link: 'https://websitedemos.net/beauty-products-store-04/wp-content/uploads/sites/830/2021/04/testimonial-09-free-img.jpg',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+        name: 'Lucinda Tung'
+    },
+    {
+        link: 'https://websitedemos.net/beauty-products-store-04/wp-content/uploads/sites/830/2021/04/testimonial-07-free-img.jpg',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+        name: 'Annie Von Holm'
+    },
+    {
+        link: 'https://websitedemos.net/beauty-products-store-04/wp-content/uploads/sites/830/2021/04/testimonial-08-free-img.jpg',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+        name: 'Nicole Anne Dime'
+    }
+]
