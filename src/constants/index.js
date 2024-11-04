@@ -61,3 +61,22 @@ export const bestSellerSingleProduct = [
         link: 'https://websitedemos.net/beauty-products-store-04/wp-content/uploads/sites/830/2021/04/product-03-free-img.jpg'
     }
 ]
+
+
+export const galleryProducts = [
+    {
+        label: "Skin Care Products",
+        type: "Skin Care",
+        bgLink: 'https://websitedemos.net/beauty-products-store-04/wp-content/uploads/sites/830/2021/04/category-01-free-img.jpg'
+    },
+    {
+        label: "Hair Care Products",
+        type: "Hair Care",
+        bgLink: 'https://websitedemos.net/beauty-products-store-04/wp-content/uploads/sites/830/2021/04/category-02-free-img.jpg'
+    },
+    {
+        label: "Body Care Products",
+        type: "Body Care",
+        bgLink: 'https://websitedemos.net/beauty-products-store-04/wp-content/uploads/sites/830/2021/04/category-03-free-img.jpg'
+    }
+]
