@@ -5,6 +5,7 @@ import BestSeller from '../components/BestSeller'
 import PhotoGallery from '../components/PhotoGallery'
 import ChooseProduct from '../components/ChooseProduct'
 import MeetFounder from '../components/MeetFounder'
+import Top5Products from '../components/Top5Products'
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <PhotoGallery />
       <ChooseProduct />
       <MeetFounder />
+      <Top5Products />
     </div>
   )
 }

@@ -99,3 +99,32 @@ export const galleryProducts = [
         bgLink: 'https://websitedemos.net/beauty-products-store-04/wp-content/uploads/sites/830/2021/04/category-03-free-img.jpg'
     }
 ]
+
+
+export const top5Product = [
+    {
+        label: 'Replumping conditioner',
+        price: 12.65,
+        link: 'https://websitedemos.net/beauty-products-store-04/wp-content/uploads/sites/830/2021/04/product-0006-free-img.png'
+    },
+    {
+        label: 'Advanced night repair',
+        price: 20.45,
+        link: 'https://websitedemos.net/beauty-products-store-04/wp-content/uploads/sites/830/2021/04/product-0007-free-img.png'
+    },
+    {
+        label: 'Tropical rehab shampoo',
+        price: 19.44,
+        link: 'https://websitedemos.net/beauty-products-store-04/wp-content/uploads/sites/830/2021/04/product-0008-free-img.png'
+    },
+    {
+        label: 'Anti-cellulite body oil',
+        price: 18.30,
+        link: 'https://websitedemos.net/beauty-products-store-04/wp-content/uploads/sites/830/2021/04/product-0009-free-img.png'
+    },
+    {
+        label: 'Conditioner for dry or dehydrated hair',
+        price: 50.66,
+        link: 'https://websitedemos.net/beauty-products-store-04/wp-content/uploads/sites/830/2021/04/product-0010-free-img.png'
+    },
+]
