@@ -3,7 +3,7 @@ import { galleryProducts } from "../constants";
 
 const PhotoGallery = () => {
   return (
-    <section className="w-full flex justify-evenly items-center">
+    <section className="w-full flex justify-evenly items-center flex-wrap my-10 space-y-5">
       {galleryProducts.map((item, index) => (
         <div
           className="w-[400px] h-[400px] bg-cover bg-no-repeat bg-center"

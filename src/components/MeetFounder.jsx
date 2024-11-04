@@ -1,10 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+//w-full h-screen flex justify-center items-center flex-col flex-wrap gap-1 my-20
 const MeetFounder = () => {
   return (
-    <section className='w-full h-screen flex justify-center items-center flex-col flex-wrap gap-1 my-20'>
-        <div className=' md:w-2/5 h-[90%] p-10 bg-[#7e8427] space-y-10'>
+    <section className='lg:flex justify-center items-center gap-1 relative'>
+        <div className='w-full lg:w-2/5 h-[90%] p-10 bg-[#7e8427] space-y-10'>
             
             <h1
             className='text-4xl font-[600] text-white'
@@ -16,10 +17,13 @@ const MeetFounder = () => {
             
             <button className='text-white hover:text-slate-200 duration-200'>Read More</button>
 
-        </div>
-        <div className='w-full md:w-2/5 h-[90%] md:h-[95%]'>
             <img src="https://websitedemos.net/beauty-products-store-04/wp-content/uploads/sites/830/2021/04/about-01-free-img.jpg" alt="founder"
-            className='w-full h-auto md:h-full object-cover' />
+            className='block w-[100px] h-[100px] object-contain rounded-full absolute -top-8 right-5 lg:hidden' />
+
+        </div>
+        <div className='hidden lg:block lg:w-2/5 h-[90%]'>
+            <img src="https://websitedemos.net/beauty-products-store-04/wp-content/uploads/sites/830/2021/04/about-01-free-img.jpg" alt="founder"
+            className='w-full  object-contain' />
         </div>
     </section>
   )

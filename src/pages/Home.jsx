@@ -9,7 +9,7 @@ import MeetFounder from '../components/MeetFounder'
 const Home = () => {
   return (
     <div className='gird place-items-center'>
-      <Hero />
+       <Hero />
       <Ingrident />
       <BestSeller />
       <PhotoGallery />

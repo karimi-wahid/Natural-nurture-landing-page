@@ -29,6 +29,25 @@ export const navItems = [
     },
 ]
 
+export const ingIcon = [
+    {
+        link: 'https://websitedemos.net/beauty-products-store-04/wp-content/uploads/sites/830/2021/04/icon-01-free-img.png',
+        label: 'Natural Ingredients'
+    },
+    {
+        link: 'https://websitedemos.net/beauty-products-store-04/wp-content/uploads/sites/830/2021/04/icon-02-free-img.png',
+        label: 'Cruelty Free'
+    },
+    {
+        link: 'https://websitedemos.net/beauty-products-store-04/wp-content/uploads/sites/830/2021/04/icon-03-free-img.png',
+        label: 'Carbon Natural'
+    },
+    {
+        link: 'https://websitedemos.net/beauty-products-store-04/wp-content/uploads/sites/830/2021/04/icon-04-free-img.png',
+        label: 'Recyclable Package'
+    },
+]
+
 
 
 export const bestSellerProduct = [

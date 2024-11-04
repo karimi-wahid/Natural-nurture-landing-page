@@ -47,12 +47,12 @@ const Navbar = () => {
                     <div className='fixed right-0 z-20 bg-white w-full p-12 flex flex-col justify-center items-center lg:hidden'>
                         <ul>
                             {navItems.map((item, index) => {
-                               return <li key={index} className='py-3 border-b border-[#7e8427]'>
+                               return <li key={index} className='py-3 cursor-pointer hover:border-b border-[#7e8427]'>
                                     {item.label}
                                 </li>
                             })}
                         </ul>
-                        <div className="flex space-x-10">
+                        <div className="flex space-x-10 mt-5">
                         <Link to='/login'>
                     <FaUser size={30} />
                     </Link>
