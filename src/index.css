@@ -11,3 +11,10 @@
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
+
+.hero{
+  background-image: url('https://websitedemos.net/beauty-products-store-04/wp-content/uploads/sites/830/2021/04/bg-01-free-img.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
