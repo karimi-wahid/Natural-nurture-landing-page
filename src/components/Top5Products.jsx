@@ -7,7 +7,7 @@ const Top5Products = () => {
         <h1 className='text-3xl font-[600]'>Founders Top 5 Favorites</h1>
         <div className='flex justify-around items-center flex-wrap gap-5'>
             {top5Product.map((item,index) => (
-            <div className='text-center w-[200px]'>
+            <div className='text-center w-[200px]' key={index}>
                 <img src={item.link} alt={item.label}
                  className='rounded-full mb-3'/>
                 <h1 className='text-xl font-[500]'>{item.label}</h1>

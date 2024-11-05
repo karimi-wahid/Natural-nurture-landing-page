@@ -2,13 +2,13 @@ import React from 'react'
 
 const ProductCategory = ({categoryName, text, products}) => {
   return (
-    <section className='mt-10 px-5'>
+    <section className='mt-10 px-5 bg-neutral-100 py-10'>
         <div className='space-y-10'>
             <h1 className='text-2xl font-[600]'>{categoryName}</h1>
             <p className='text-[12px] text-neutral-500'>{text}</p>
             <div className='flex justify-between items-center text-[13px] text-neutral-600'>
-                <p>Showing all 8 results</p>
-                <select name="" id="">
+                <p>Showing all {products.length} results</p>
+                <select name="" id="" className='outline-none bg-inherit'>
                 <option value="">Default sorting</option>
                 <option value="">Sort by popularity</option>
                 <option value="">Sort by average rating</option>
@@ -21,8 +21,8 @@ const ProductCategory = ({categoryName, text, products}) => {
         </div>
         <div className='mt-10 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 place-items-center gap-5'>
             {products.map((product, index) => (
-            <div className='w-[200px]'>
-            <div className='w-[200px] h-[200px] border border-red-400 mb-2'>
+            <div className='w-[200px]' key={index}>
+            <div className='w-[200px] h-[200px] mb-2'>
                 <img src={product.link} alt={product.title} />
             </div>
             <p className='text-[12px] text-neutral-400'>{categoryName}</p>

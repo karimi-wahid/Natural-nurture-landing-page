@@ -5,19 +5,19 @@ export const navItems = [
     },
     {
         label: 'Bath & Body',
-        link: '/bath-body'
+        link: '/product-category/bathBody'
     },
     {
         label: 'Hair Care',
-        link: '/hair-care'
+        link: '/product-category/hairCare'
     },
     {
         label: 'Skin Care',
-        link: '/skin-care'
+        link: '/product-category/skinCare'
     },
     {
         label: 'Gifts',
-        link: '/gifts'
+        link: '/product-category/gifts'
     },
     {
         label: 'About Us',

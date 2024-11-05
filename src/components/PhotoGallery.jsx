@@ -6,6 +6,7 @@ const PhotoGallery = () => {
     <section className="w-full flex justify-evenly items-center flex-wrap my-10 space-y-5">
       {galleryProducts.map((item, index) => (
         <div
+        key={index}
           className="w-[400px] h-[400px] bg-cover bg-no-repeat bg-center"
           style={{ backgroundImage: `url(${item.bgLink})` }}>
           <div className="w-full h-full flex items-center justify-center flex-col space-y-5 bg-black bg-opacity-30">

@@ -20,7 +20,7 @@ const BestSeller = () => {
             ))}   
             </div>
             {bestSellerSingleProduct.map((item, index) => (
-            <div className='mt-5 lg:mt-0'>
+            <div className='mt-5 lg:mt-0' key={index}>
                 <img src={item.link} alt={item.title} />
                 <h1 className='text-2xl font-[600] mt-2'>{item.title}</h1>
                 <p className='text-[#7e8427]'>${item.price}</p>

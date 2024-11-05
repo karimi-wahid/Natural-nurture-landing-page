@@ -1,7 +1,4 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
 
-//w-full h-screen flex justify-center items-center flex-col flex-wrap gap-1 my-20
 const MeetFounder = () => {
   return (
     <section className='lg:flex justify-center items-center gap-1 relative my-10'>

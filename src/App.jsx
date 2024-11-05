@@ -1,7 +1,9 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import Layout from "./pages/Layout"
 import Home from "./pages/Home"
-import BathBody from "./pages/BathBody"
+
+import ProductType from "./pages/ProductType"
+import About from "./pages/About"
 
 function App() {
   const router = createBrowserRouter([
@@ -14,9 +16,14 @@ function App() {
           element: <Home />
         },
         {
-          path: '/product-category/bath&body',
-          element: <BathBody />
+          path: '/product-category/:category',
+          element: <ProductType />
+        },
+        {
+          path: '/about',
+          element: <About />
         }
+
       ]
     }
   ])

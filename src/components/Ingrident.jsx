@@ -13,7 +13,7 @@ const Ingrident = () => {
       <div>
         <ul className="flex  justify-between items-center flex-wrap gap-10">
           {ingIcon.map((item, index) => (
-            <li className="w-[100px] text-center">
+            <li className="w-[100px] text-center" key={index}>
               <img
                 decoding="async"
                 width="82"
