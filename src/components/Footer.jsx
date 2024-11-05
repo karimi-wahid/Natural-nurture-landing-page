@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { categories, contactUs, usefulLinks } from "../constants";
+import Button from "./Button";
 
 const Footer = () => {
   return (
@@ -8,9 +9,7 @@ const Footer = () => {
       <div className="w-full grid grid-cols-1 md:grid-cols-3 pr-5 pb-10 mt-5">
         <div className="space-y-5">
           <h1 className="text-2xl font-[600]">Have questions?</h1>
-          <button className="px-3 py-2 bg-[#7e8427] text-white hover:bg-white hover:text-black duration-200">
-            Get In Touch
-          </button>
+          <Button type={''} btnText={"Get In Touch"} />
         </div>
         <div className="space-y-5">
           <h1 className="text-xl font-[600]">Track Your Order</h1>
@@ -77,9 +76,7 @@ const Footer = () => {
             className="outline-none border border-neutral-400 py-2 px-5 block"
           />
 
-          <button className="px-3 py-2 bg-[#7e8427] hover:bg-white hover:text-black text-white">
-            Submit
-          </button>
+          <Button type={''} btnText={"Submit"} />
         </div>
       </div>
       <div className="border-t border-neutral-300 py-5">

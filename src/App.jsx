@@ -4,6 +4,7 @@ import Home from "./pages/Home"
 
 import ProductType from "./pages/ProductType"
 import About from "./pages/About"
+import Contact from "./pages/Contact"
 
 function App() {
   const router = createBrowserRouter([
@@ -22,8 +23,11 @@ function App() {
         {
           path: '/about',
           element: <About />
+        },
+        {
+          path: '/contact',
+          element: <Contact />
         }
-
       ]
     }
   ])

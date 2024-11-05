@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "./Button";
 
 const ChooseProduct = () => {
   return (
@@ -15,9 +16,8 @@ const ChooseProduct = () => {
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
-        <button className="px-3 py-2 text-white bg-[#7e8427] hover:bg-white hover:text-black duration-500 ">
-          Choose Your Products
-        </button>
+        <Button type={''} btnText={"Choose Your Products"}/>
+        
       </div>
     </section>
   );

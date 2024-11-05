@@ -8,7 +8,7 @@ import Features from '../components/Features'
 const About = () => {
   return (
     <section>
-        <InfoSection imgUrl={'https://images.pexels.com/photos/906150/pexels-photo-906150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'}/>
+        <InfoSection text={'About Us'} imgUrl={'https://images.pexels.com/photos/906150/pexels-photo-906150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'}/>
         <div className='px-10'>
         <HomeMade />
         <MeetFounder />

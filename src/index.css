@@ -18,3 +18,20 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+form input{
+  width: 40%;
+  margin-right: 10px;
+  border: 1px solid rgb(172, 161, 161);
+  padding: 10px 10px;
+  border-radius: 5px;
+  outline: none;
+  font-size: 12px;
+}
+
+textarea{
+  border: 1px solid rgb(181, 197, 181);
+  height: 150px;
+  outline: none;
+  padding: 10px;
+}
