@@ -3,7 +3,7 @@ import Button from "./Button";
 
 const ContactUs = () => {
   return (
-    <section className="w-[90%] mt-10 flex justify-center items-center px-5 border-b border-neutral-400 pb-5">
+    <section className="w-[90%] mt-10 flex justify-center items-center flex-wrap px-5 border-b border-neutral-400 pb-5">
       <div className="w-2/6 text-center space-y-2">
         <h1 className="text-xl font-semibold">Dedicated to our clients</h1>
         <p className="text-neutral-500">

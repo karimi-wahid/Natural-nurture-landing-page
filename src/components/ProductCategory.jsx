@@ -1,4 +1,4 @@
-import React from 'react'
+import { IoIosCart } from 'react-icons/io'
 
 const ProductCategory = ({categoryName, text, products}) => {
   return (
@@ -21,13 +21,16 @@ const ProductCategory = ({categoryName, text, products}) => {
         </div>
         <div className='mt-10 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 place-items-center gap-5'>
             {products.map((product, index) => (
-            <div className='w-[200px]' key={index}>
-            <div className='w-[200px] h-[200px] mb-2'>
+            <div className='w-[200px] relative' key={index}>
+            <div className='w-[240px] h-[240px] mb-2'>
                 <img src={product.link} alt={product.title} />
+                
+                <IoIosCart size={20} className='hover:block absolute top-2 right-0 hover:scale-125 cursor-pointer'/>
+                
             </div>
             <p className='text-[12px] text-neutral-400'>{categoryName}</p>
             <h1 className='font-[500]'>{product.title}</h1>
-            <p className='text-[12px] w-[90%] break-words'><span className='line-through text-neutral-400'>{product.oldPrice}</span><span>{product.newPrice}</span></p>
+            <p className='text-[12px] w-[90%] break-words'><span className='line-through text-neutral-400'>${product.oldPrice}</span><span> {product.newPrice}</span></p>
             </div>
             ))}
         </div>

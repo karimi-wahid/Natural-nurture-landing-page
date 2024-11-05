@@ -1,6 +1,6 @@
 
 import {navItems} from '../constants/index'
-import { Link, useParams } from 'react-router-dom'
+import { Link, NavLink} from 'react-router-dom'
 import { IoMdClose, IoIosMenu, IoIosCart } from "react-icons/io";
 import { FaUser } from "react-icons/fa";
 import { useState } from 'react'
@@ -20,19 +20,23 @@ const Navbar = () => {
                 </div>
                 <ul className='hidden lg:flex ml-14 space-x-12'>
                     {navItems.map((item, index) =>{
-                        return <li key={index} className='hover:text-[#7e8427]'>
-                            <Link to={item.link}>{item.label}</Link>
+                        return <li key={index}>
+                            <NavLink
+                            className={({ isActive }) => 
+                                `hover:text-[#7e8427] ${isActive ? 'text-[#7e8427]' : 'text-gray-700'}`
+                            }
+                            to={item.link}>{item.label}</NavLink>
                         </li>
                     })
                     }
                 </ul>
                 <div className='hidden lg:flex justify-center space-x-12 items-center'>
                     <Link to='/login'>
-                    <FaUser size={30} className='text-[#7e8427]' />
+                    <FaUser size={20} className='text-[#7e8427]' />
                     </Link>
                     
                     <Link to='/'>
-                    <IoIosCart  size={30} className='text-[#7e8427]'/>
+                    <IoIosCart  size={25} className='text-[#7e8427]'/>
                     </Link>
                 </div>
                 <div className="lg:hidden md:flex flex-col justify-end">
