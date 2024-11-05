@@ -7,8 +7,8 @@ const ProductCategory = ({categoryName, text, products}) => {
             <h1 className='text-2xl font-[600]'>{categoryName}</h1>
             <p className='text-[12px] text-neutral-500'>{text}</p>
             <div className='flex justify-between items-center text-[13px] text-neutral-600'>
-                <p>Showing all {products.length} results</p>
-                <select name="" id="" className='outline-none bg-inherit'>
+                <p className='px-3 py-2 bg-neutral-200'>Showing all {products.length} results</p>
+                <select name="" id="" className='outline-none px-3 py-2 bg-neutral-200'>
                 <option value="">Default sorting</option>
                 <option value="">Sort by popularity</option>
                 <option value="">Sort by average rating</option>
