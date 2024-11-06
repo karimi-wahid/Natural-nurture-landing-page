@@ -38,7 +38,7 @@ const Cart = () => {
             <ul className='w-full'>
                 {cartItem.map((item, index) => (
                 <li key={index} className='w-[100%] py-3 grid grid-cols-4 place-items-center '>
-                    <img src={item.link} alt=""
+                    <img src={item.link} alt={item.title}
                     className='w-[70px] h-[70px] rounded-full' />
                     <div>
                     <p className='text-[14px] font-semibold'>{item.title}</p>

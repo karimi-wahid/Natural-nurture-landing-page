@@ -7,6 +7,7 @@ import About from "./pages/About"
 import Contact from "./pages/Contact"
 import Cart from "./pages/Cart"
 import LoginSignUp from "./pages/LoginSignUp"
+import CheckOut from "./pages/CheckOut"
 
 function App() {
   const router = createBrowserRouter([
@@ -33,11 +34,14 @@ function App() {
         {
           path: '/cart',
           element: <Cart />
-        }
-        ,
+        },
         {
           path: '/auth',
           element: <LoginSignUp />
+        },
+        {
+          path: '/payment/checkout',
+          element: <CheckOut />
         }
       ]
     }

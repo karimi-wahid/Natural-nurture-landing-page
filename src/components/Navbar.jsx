@@ -33,7 +33,7 @@ const Navbar = () => {
                     }
                 </ul>
                 <div className='hidden lg:flex justify-center space-x-12 items-center'>
-                    <Link to='/login'>
+                    <Link to='/auth'>
                     <FaUser size={20} className='text-[#7e8427]' />
                     </Link>
                     
@@ -63,7 +63,7 @@ const Navbar = () => {
                             })}
                         </ul>
                         <div className="flex space-x-10 mt-5">
-                        <Link to='/login'>
+                        <Link to='/auth'>
                     <FaUser size={30} />
                     </Link>
                     
