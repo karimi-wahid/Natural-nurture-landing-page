@@ -19,7 +19,7 @@
   background-size: cover;
 }
 
-form input{
+#contactForm input{
   width: 40%;
   margin-right: 10px;
   border: 1px solid rgb(172, 161, 161);

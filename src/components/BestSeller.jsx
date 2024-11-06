@@ -14,7 +14,7 @@ const BestSeller = () => {
             <div className='w-2/5 md:w-2/6 lg:w-2/4' key={index}>
                 <img src={item.link} alt={item.title}
                  />
-                <h1 className='text-2xl font-[600] mt-2'>{item.title}</h1>
+                <h1 className='font-[600] mt-2'>{item.title}</h1>
                 <p className='text-[#7e8427]'>${item.price}</p>
             </div>
             ))}   

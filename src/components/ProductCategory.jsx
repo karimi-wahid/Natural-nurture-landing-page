@@ -10,7 +10,7 @@ const ProductCategory = ({ categoryName, text, products }) => {
   };
 
   return (
-    <section className="mt-10 px-5 bg-neutral-100 py-10">
+    <section className="mt-20 px-5 bg-neutral-100 py-10 z-0">
       <div className="space-y-10">
         <h1 className="text-2xl font-[600]">{categoryName}</h1>
         <p className="text-[12px] text-neutral-500">{text}</p>
@@ -19,8 +19,6 @@ const ProductCategory = ({ categoryName, text, products }) => {
             Showing all {products.length} results
           </p>
           <select
-            name=""
-            id=""
             className="outline-none px-3 py-2 bg-neutral-200">
             <option value="">Default sorting</option>
             <option value="">Sort by price: low to high</option>

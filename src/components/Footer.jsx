@@ -47,7 +47,7 @@ const Footer = () => {
         </div>
 
         <div>
-          <h1 className="text-xl font-[500] pb-2">UseFul Links</h1>
+          <h1 className="text-xl font-[500] pb-2">Categories</h1>
           <ul className="text-neutral-700 space-y-1 w-full">
             {categories.map((item, index) => (
               <li key={index} className="hover:text-[#7e8427]">
@@ -58,7 +58,7 @@ const Footer = () => {
         </div>
 
         <div>
-          <h1 className="text-xl font-[500] pb-2">UseFul Links</h1>
+          <h1 className="text-xl font-[500] pb-2">Contact Us</h1>
           <ul className="text-neutral-700 space-y-1">
             {contactUs.map((item, index) => (
               <li key={index} className="hover:text-[#7e8427]">

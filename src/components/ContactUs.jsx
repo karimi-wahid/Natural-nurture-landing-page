@@ -12,7 +12,7 @@ const ContactUs = () => {
         </p>
       </div>
 
-      <form action="" className="w-[50%] flex flex-col p-5">
+      <form id="contactForm" action="" className="w-[50%] flex flex-col p-5">
         <label htmlFor="firstName">
           Name <span className="text-red-700">*</span>
         </label>

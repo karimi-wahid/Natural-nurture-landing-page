@@ -10,6 +10,7 @@ const Cart = () => {
     const dispatch = useDispatch()
     const {cartItem} = useSelector((item) => item.name)
     const totalPrice = useSelector(item => item.name.price)
+    const quantity = useSelector(item => item.name.quantity)
 
     const handleRemoveFromCart = (itemId) => {
         dispatch(removeFromCart(itemId))
@@ -24,9 +25,15 @@ const Cart = () => {
     }
     
   return (
-    <div className='w-full place-items-center my-10 pb-5 mb-20'>
-        <button onClick={() => navigate(-1)}
-            className='bg-[#7e8427] text-white px-3 py-2'>Go back page</button>
+    <div className='w-full grid place-items-center my-10 pb-5 mb-20'>
+        {
+            quantity >= 1 ? <button onClick={() => navigate(-1)}
+            className='bg-[#7e8427] text-white px-3 py-2'>Go back</button>
+            : <button onClick={() => navigate('/product-category/bathBody')}
+            className='bg-[#7e8427] text-white px-3 py-2'>Go Shop</button>
+        }
+            
+        {quantity == 1 && (
         <div className='w-[50%] flex items-center mt-10 shadow-md pb-10'>
             <ul className='w-full'>
                 {cartItem.map((item, index) => (
@@ -52,13 +59,13 @@ const Cart = () => {
                 ))}
                 <div>
                 <li className='w-full flex justify-around items-center my-5 py-3 border-y border-neutral-300'><span className='font-[400]'>subTotal</span> <span>${totalPrice}</span></li>
-                <li className='block md:flex  justify-around items-center'>
+                <li className='flex justify-around items-center flex-wrap'>
                 <button 
-                className='px-3 py-2 bg-[#7e8427] mt-3 w-[30%] text-white hover:bg-white hover:text-black hover:ring-[#7e8427] duration-200'
+                className='px-3 py-2 bg-[#7e8427] mt-3 lg:w-[40%] text-white hover:bg-white hover:text-black hover:ring-[#7e8427] duration-200'
                 onClick={() => handleClearCart()}>Remove All</button>
                 
                 <button
-                className='px-3 py-2 bg-[#7e8427] mt-3 w-[30%] text-white hover:bg-white hover:text-black hover:ring-[#7e8427] duration-200'
+                className='px-3 py-2 bg-[#7e8427] mt-3 lg:w-[40%] text-white hover:bg-white hover:text-black hover:ring-[#7e8427] duration-200'
                 >
                     <Link to='/payment/checkout'>Checkout</Link>
                     </button>
@@ -67,6 +74,7 @@ const Cart = () => {
                 </div>
             </ul>
         </div>
+        )}
     </div>
   )
 }

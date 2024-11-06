@@ -51,11 +51,14 @@ const Navbar = () => {
             </div>
             {
                 mobileDrawerOpen && (
-                    <div className='fixed right-0 z-20 bg-white w-full p-12 flex flex-col justify-center items-center lg:hidden'>
+                    <div className='fixed right-0 z-50 mb-20 bg-white w-full p-12 flex flex-col justify-center items-center lg:hidden'>
                         <ul>
                             {navItems.map((item, index) => {
-                               return <li key={index} className='py-3 cursor-pointer hover:border-b border-[#7e8427]'>
+                               return <li
+                               key={index} className='py-3 cursor-pointer hover:border-b border-[#7e8427]'>
+                                <Link to={item.link}>
                                     {item.label}
+                                </Link>    
                                 </li>
                             })}
                         </ul>
@@ -64,7 +67,7 @@ const Navbar = () => {
                     <FaUser size={30} />
                     </Link>
                     
-                    <Link to='/'>
+                    <Link to='/cart'>
                     <IoIosCart  size={30}/>
                     </Link>
                         </div>
