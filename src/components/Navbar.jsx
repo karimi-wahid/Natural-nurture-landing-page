@@ -4,9 +4,11 @@ import { Link, NavLink} from 'react-router-dom'
 import { IoMdClose, IoIosMenu, IoIosCart } from "react-icons/io";
 import { FaUser } from "react-icons/fa";
 import { useState } from 'react'
+import { useSelector } from 'react-redux';
 
 const Navbar = () => {
     const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
+    const quantity = useSelector((item) => item.name.quantity)
     const mobileDrawerToggle = () =>{
         setMobileDrawerOpen(!mobileDrawerOpen)
     }
@@ -35,9 +37,11 @@ const Navbar = () => {
                     <FaUser size={20} className='text-[#7e8427]' />
                     </Link>
                     
-                    <Link to='/'>
-                    <IoIosCart  size={25} className='text-[#7e8427]'/>
+                    <Link to='/cart'>
+                    <IoIosCart  size={25} className='text-[#7e8427] relative'/>
+                    <h1 className='absolute top-1 right-0 text-[12px] bg-[#7e8427] text-white flex items-center justify-center p-2 w-5 h-5 rounded-full'>{quantity}</h1>
                     </Link>
+                    
                 </div>
                 <div className="lg:hidden md:flex flex-col justify-end">
                     <button onClick={mobileDrawerToggle} className='text-[#7e8427]'>
