@@ -86,16 +86,19 @@ export const galleryProducts = [
     {
         label: "Skin Care Products",
         type: "Skin Care",
+        link: '/product-category/skinCare',
         bgLink: 'https://websitedemos.net/beauty-products-store-04/wp-content/uploads/sites/830/2021/04/category-01-free-img.jpg'
     },
     {
         label: "Hair Care Products",
         type: "Hair Care",
+        link: '/product-category/hairCare',
         bgLink: 'https://websitedemos.net/beauty-products-store-04/wp-content/uploads/sites/830/2021/04/category-02-free-img.jpg'
     },
     {
         label: "Body Care Products",
         type: "Body Care",
+        link: '/product-category/bathBody',
         bgLink: 'https://websitedemos.net/beauty-products-store-04/wp-content/uploads/sites/830/2021/04/category-03-free-img.jpg'
     }
 ]
@@ -196,12 +199,12 @@ export const categories = [
 
 export const contactUs = [
     {
-        label: "Kart-E-Naw, District 8, Kabul, AFG"
+        label: "Kart-E-Naw, Kabul, AFG"
     },
     {
         label: "+93766-303-465",
     },
     {
-        label: "wahidullah.karimi22@gmail.com",
+        label: "email@gmail.com",
     },
 ]

@@ -33,7 +33,7 @@ const Cart = () => {
             className='bg-[#7e8427] text-white px-3 py-2'>Go Shop</button>
         }
             
-        {quantity == 1 && (
+        {quantity >= 1 && (
         <div className='w-[50%] flex items-center mt-10 shadow-md pb-10'>
             <ul className='w-full'>
                 {cartItem.map((item, index) => (

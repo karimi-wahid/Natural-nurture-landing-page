@@ -18,12 +18,6 @@ const ProductCategory = ({ categoryName, text, products }) => {
           <p className="px-3 py-2 bg-neutral-200">
             Showing all {products.length} results
           </p>
-          <select
-            className="outline-none px-3 py-2 bg-neutral-200">
-            <option value="">Default sorting</option>
-            <option value="">Sort by price: low to high</option>
-            <option value="">Sort by price: high to low</option>
-          </select>
         </div>
       </div>
       <div className="mt-10 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 place-items-center gap-5">

@@ -1,8 +1,13 @@
 import React, { useState } from 'react'
 import { useSelector } from 'react-redux'
 import Button from './Button';
+import { userSchema } from '../auth/CheckOutForm';
 
 const CashOutForm = () => {
+  const {cartItem} = useSelector((item) => item.name)
+    const totalPrice = useSelector(item => item.name.price)
+    const quantity = useSelector(item => item.name.quantity)
+    
     const [checkOutDetail, setCheckOutDetail] = useState({
         email: '',
         firstName: '',
@@ -14,9 +19,9 @@ const CashOutForm = () => {
         cityName: '',
         stateName: '',
         postZipCode: '',
+        phone: '',
         notes: '',
         paymentMethod: '',
-        couponCode: '',
     });
 
     const handleInputChange = (e) => {
@@ -26,20 +31,18 @@ const CashOutForm = () => {
         })
     }
 
-    const handleFormSubmit = (e) => {
+    const handleFormSubmit = async (e) => {
         e.preventDefault();
 
-        //  all userDetail is here
+        const isValid = await userSchema.isValid(checkOutDetail);
+        if(isValid){
+          //  all userDetail is here
         // console.log(checkOutDetail)
+
+        }else{
+          window.alert('Please fill everything correctly')
+        }  
     };
-
-
-
-    const {cartItem} = useSelector((item) => item.name)
-    const totalPrice = useSelector(item => item.name.price)
-    const quantity = useSelector(item => item.name.quantity)
-
-
 
   return (
     <section className="w-full flex justify-center items-center flex-col bg-neutral-100 pt-5">
@@ -156,6 +159,7 @@ const CashOutForm = () => {
                 />
               </div>
               <input type="text" placeholder="Phone *" name="phone" required
+              onChange={handleInputChange}
               className="w-[95%] py-2 px-2 outline-none focus:ring-1 focus:ring-blue-400 rounded-md border border-neutral-400" />
 
               <div className="mt-5 w-[95%]">
@@ -206,13 +210,6 @@ const CashOutForm = () => {
                     <span>Total</span>
                     <span>${totalPrice}</span>
                 </p>
-            </div>
-            <div className="flex justify-between items-center gap-3 mt-3">
-                <input type="text"
-                placeholder="Coupon Code" name="couponCode"
-                className="w-[80%] py-3 px-2 outline-none focus:ring-1 focus:ring-blue-400 rounded-md border-neutral-400 border"
-                onChange={handleInputChange} />
-                <button className="px-6 py-3 bg-purple-600 text-white rounded-md hover:bg-purple-700">Apply</button>
             </div>
         </div>
       </div>

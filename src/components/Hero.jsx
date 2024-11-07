@@ -1,4 +1,3 @@
-import React from "react";
 import BtnWhite from "./BtnWhite";
 
 const Hero = () => {
@@ -16,7 +15,7 @@ const Hero = () => {
           adipisicing elit, <br className="hidden md:block" /> sed do eiusmod
           tempor incididunt{" "}
         </p>
-        <BtnWhite btnText={"Shop Now"}/>
+        <BtnWhite btnText={"Shop Now"} link="/product-category/bathBody"/>
       </div>
     </div>
   );
